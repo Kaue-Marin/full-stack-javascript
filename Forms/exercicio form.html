@@ -25,7 +25,31 @@
       <label for="Foto">- Foto: </label>
       <input type="file" id="Foto" name="Foto" /><br /><br />
 
-      <select name="nascionalidade">
+      <label for="nasc">nascionalidade: </label>
+      <select name="nascionalidade" >
+      <option value="Russo" id="nascionalidade">Russo</option>
+      <option value="Americano" id="nascionalidade" >Americano</option>
+      <option value="Brasileiro" id="nascionalidade">Brasileiro</option><br><br>
+
+      <label for="genero">- selecione seu gênero:</label>
+      <input type="radio" id="Masculino" name="gênero" value="Masculino" />M
+      <input type="radio" id="Fêminino" name="gênero" value="Feminino" />F
+      <input type="radio" id="nb" name="gênero" value="Não binarie" />NB
+      <input type="radio" id="Outros" name="gênero" value="Outros" />Outros
+      <br><br>
+
+      <label for="qualidades">Suas principais qualidades: </label><br><br>
+
+      Inteligência <input type="checkbox" id="Inteligência" name="qualidade1" value="Inteligência">
+
+      | Resiliência <input type="checkbox" id="Resiliência" name="qualidade2" value="Resiliência">
+
+      | Prepraro físico <input type="checkbox" id="preparo físico" name="qualidade3" value="Prepraro físico">
+
+      | Educação <input type="checkbox" id="Educação" name="qualidade3" value="Educação"><br><br>
+
+      <textarea name="caixa de texto" id="caixa de texto" cols="30" rows="10" placeholder="porque você gostaria de ser um astronauta?"></textarea><br><br>
+      <input type="submit" value="enviar">
     </form>
   </body>
 </html>

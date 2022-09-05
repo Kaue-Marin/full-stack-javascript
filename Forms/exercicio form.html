@@ -4,52 +4,99 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro liga astronautas</title>
+    <title>Cadastro liga dos astronautas</title>
   </head>
   <body>
     <h3>Cadastro liga dos astronautas</h3>
     <form>
-      <label for="nome">Nome: </label>
-      <input type="text" id="nome" name="nome" />
-      <br /><br />
+      <div>
+        <label for="nome">nome: </label>
+        <input type="text" id="nome" name="nome" />
+      </div>
+      <br />
 
-      <label for="email">Email </label>
-      <input type="email" id="email" name="email" />
+      <div>
+        <label for="email">email: </label>
+        <input type="email" id="email" name="email" /> -
 
-      <label for="senha">- Senha: </label>
-      <input type="password" id="senha" name="senha" /><br /><br />
+        <label for="password">password: </label>
+        <input type="password" id="password" name="password" />
+      </div>
+      <br />
 
-      <label for="nasc"> Data de nascimento</label>
-      <input type="date" name="nasc" id="nasc" />
+      <div>
+        <label for="data de nascimento">data de nascimento: </label>
+        <input type="date" id="data de nascimento" name="data de nascimento" />
+        -
 
-      <label for="Foto">- Foto: </label>
-      <input type="file" id="Foto" name="Foto" /><br /><br />
+        <label for="foto">Foto: </label>
+        <input type="file" id="foto" name="foto" />
+      </div>
 
-      <label for="nasc">nascionalidade: </label>
-      <select name="nascionalidade" >
-      <option value="Russo" id="nascionalidade">Russo</option>
-      <option value="Americano" id="nascionalidade" >Americano</option>
-      <option value="Brasileiro" id="nascionalidade">Brasileiro</option><br><br>
+      <div>
+        <select name="nacionalidade" id="nacionalidade">
+          Nacionalidade:
+          <option value="Russo">Russo</option>
+          <option value="brasileiro">Brasileiro</option>
+          <option value="americano">Americano</option>
+        </select>
 
-      <label for="genero">- selecione seu gênero:</label>
-      <input type="radio" id="Masculino" name="gênero" value="Masculino" />M
-      <input type="radio" id="Fêminino" name="gênero" value="Feminino" />F
-      <input type="radio" id="nb" name="gênero" value="Não binarie" />NB
-      <input type="radio" id="Outros" name="gênero" value="Outros" />Outros
-      <br><br>
+        <label for="genero">- Gênero: </label>
+        <input type="radio" id="genero" name="genero" value="M" />M
+        <input type="radio" id="genero" name="genero" value="F" />F
+        <input type="radio" id="genero" name="genero" value="NB" />NB
+        <input type="radio" id="genero" name="genero" value="OUTROS" />OUTROS
+      </div>
 
-      <label for="qualidades">Suas principais qualidades: </label><br><br>
+      <div>
+        <p>Suas principais qualidades:</p>
 
-      Inteligência <input type="checkbox" id="Inteligência" name="qualidade1" value="Inteligência">
+        <label for="qualidades">inteligência </label>
+        <input
+          type="checkbox"
+          id="qualidade1"
+          name="Qualidade1"
+          value="inteligência"
+        />
 
-      | Resiliência <input type="checkbox" id="Resiliência" name="qualidade2" value="Resiliência">
+        <label for="qualidades">| Resiliência </label>
+        <input
+          type="checkbox"
+          id="qualidade2"
+          name="Qualidade2"
+          value="Resiliência"
+        />
 
-      | Prepraro físico <input type="checkbox" id="preparo físico" name="qualidade3" value="Prepraro físico">
+        <label for="qualidades">| preparo físico </label>
+        <input
+          type="checkbox"
+          id="qualidade3"
+          name="Qualidade3"
+          value="preparo fisico"
+        />
 
-      | Educação <input type="checkbox" id="Educação" name="qualidade3" value="Educação"><br><br>
+        <label for="qualidades">| Educação </label>
+        <input
+          type="checkbox"
+          id="qualidade4"
+          name="Qualidade4"
+          value="Educação"
+        />
+      </div>
+      <br />
 
-      <textarea name="caixa de texto" id="caixa de texto" cols="30" rows="10" placeholder="porque você gostaria de ser um astronauta?"></textarea><br><br>
-      <input type="submit" value="enviar">
+      <div>
+        <textarea
+          name="descrição"
+          id="descrição"
+          cols="30"
+          rows="10"
+          placeholder="porque você gostaria de ser um astronauta? "
+        ></textarea>
+      </div>
+      <br />
+
+      <input type="submit" value="Criar" />
     </form>
   </body>
 </html>

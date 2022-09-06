@@ -1,0 +1,37 @@
+body {
+  background-color: #808080;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQUoGMt5jLKLnsoAVZJujyB1aJP2RoF01gnQ&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#titulo {
+  color: #ffff55;
+  font-size: 50px;
+  border-style: solid;
+  border-width: 5px;
+  border: #ffff55 50px solid;
+  border-width: 5px;
+  border-color: #005577;
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+
+.coramarela {
+  color: #ffff55;
+}
+
+#europa {
+  font-size: 35px;
+  color: #000;
+}
+
+.pequeno {
+  font-size: 10px;
+}
+
+.grande {
+  font-size: 50px;
+}

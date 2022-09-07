@@ -1,0 +1,31 @@
+body {
+  margin: 0px;
+}
+
+div {
+  background-color: #e7e7e7;
+  margin: 0px auto 0em auto;
+  height: 100%;
+  width: 70%;
+  border-top: 100px;
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
+
+.datas {
+  margin: 0px;
+  color: #008080;
+  font-family: "Roboto", sans-serif;
+  margin-left: 25px;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 25px;
+}
+
+.posts {
+  font-family: "Open Sans", sans-serif;
+  height: 75px;
+  margin-left: 25px;
+}

@@ -29,23 +29,37 @@ p {
   font-size: 22px;
 }
 
-@media (max-width: 795px) {
+@media (max-width: 320px) {
   .img-content {
-  }
-
-  p {
-    font-size: 16px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 510px) {
-  .img-content {
-    width: 99%;
+    width: 100%;
     height: auto;
   }
 
   p {
-    text-align: center;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  .img-content {
+    width: 98%;
+    height: auto;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 2560px) and (min-width: 1440px) {
+  .img-content {
+    width: 98%;
+    height: auto;
+  }
+  .titulo {
+    font-size: 80px;
+  }
+  p {
+    font-size: 40px;
   }
 }

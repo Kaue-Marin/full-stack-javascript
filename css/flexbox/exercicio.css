@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cabeçalho {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 10px 25px;
+}
+
+.cabeçalho-imagem1 {
+  width: 40px;
+  height: auto;
+}
+
+.cabeçalho-imagem2 {
+  width: 200px;
+  height: auto;
+}
+
+.cabeçalho-conteudo-links {
+  display: flex;
+  gap: 0px 15px;
+  cursor: pointer;
+}
+
+.cabeçalho-links {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  border: 2.5px solid white;
+  padding: 10px;
+  border-radius: 15px;
+  transition: 0.4s;
+}
+
+.cabeçalho-links:hover {
+  border-color: #f00;
+}

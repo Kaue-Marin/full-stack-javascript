@@ -5,21 +5,19 @@
 }
 
 .container {
-  display: flex;
-  gap: 0px 15px;
-  align-items: center;
-  justify-content: center;
+  display: grid;
   background-color: darkgray;
   height: 100vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-rows: 210px;
+  gap: 10px 15px;
 }
 
 .itens {
+  display: flex;
   background-color: white;
   border: 2px solid black;
-  font-size: 20px;
-  height: 200px;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 25px;
+  padding: 10px;
 }

@@ -1,0 +1,52 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: darkgray;
+}
+
+p {
+  font-size: 27px;
+}
+
+.cabeçalho {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  background-color: white;
+  padding: 20px;
+}
+
+.principal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.principal-itens {
+  display: flex;
+  border: 1px solid black;
+  background-color: white;
+  width: 350px;
+  height: 230px;
+  align-items: center;
+  justify-content: center;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  background-color: white;
+  padding: 20px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}

@@ -23,6 +23,28 @@ img {
     "rodape                   rodape            rodape";
 }
 
+@media (max-width: 1200px) {
+  .estrutura {
+    grid-template-areas:
+      "cabeçalho          cabeçalho  cabeçalho"
+      "navegação-lateral  principal  principal"
+      "navegação-lateral  anuncios   anuncios"
+      "rodape             rodape     rodape";
+  }
+}
+
+@media (max-width: 760px) {
+  .estrutura {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "cabeçalho"
+      "navegação-lateral"
+      "principal"
+      "anuncios"
+      "rodape";
+  }
+}
+
 .cabeçalho {
   grid-area: cabeçalho;
   background: linear-gradient(135deg, #8844ee, #b07dfb);
@@ -52,8 +74,63 @@ img {
   background: rgba(0, 0, 0, 0.5);
 }
 
+.cabeçalho li + li {
+  margin-left: 30px;
+}
+
+@media (max-width: 760px) {
+  .cabeçalho {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .cabeçalho nav a {
+    font-size: 1em;
+  }
+
+  .cabeçalho nav ul {
+    gap: 10px;
+  }
+}
+
 .logo {
   width: 200px;
+}
+
+@media (max-width: 760px) {
+  .navegação-lateral {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+  .navegação-lateral::after {
+    content: "→ ";
+    position: relative;
+    top: 5px;
+    left: 30px;
+  }
+
+  .navegação-lateral ul {
+    display: flex;
+  }
+
+  .navegação-lateral ul img {
+    width: 100%;
+  }
+
+  .navegação-lateral {
+    flex: 1 0 60px;
+    padding: 0 30px;
+  }
+
+  .navegação-lateral ul img {
+    margin: 30px 30px 30px 0px;
+  }
 }
 
 .navegação-lateral {
@@ -191,11 +268,15 @@ p {
   margin: 0 auto;
 }
 
-.atributos p {
+.atributos li {
   color: white;
   font-family: Courier, monospace;
   font-size: 1.2em;
   padding: 15px;
+}
+
+.atributos li + li {
+  border-top: 2px solid #b07dfb;
 }
 
 /* Anuncios */

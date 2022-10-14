@@ -1,4 +1,4 @@
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -6,56 +6,98 @@
 }
 
 .container {
-  background-color: darkgray;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  background-color: darkgray;
 }
 
 .cabeçalho {
-  border: 2px solid black;
+  border: 2px black solid;
+  height: 80px;
   background-color: white;
-  height: 60px;
 }
 
 .principal {
-  flex: 1 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  flex: 1 0 auto;
+  grid-template-areas: 
+  "item1 item2 item3"
+  "item4 item4 item4"
+  "item5 item5 item6";
   padding: 10px;
-  gap: 10px;
-  grid-template-areas:
-    "item1 item2 item3"
-    "item4 item4 item4"
-    "item5 item5 item6";
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .item {
-  border: 2px solid black;
+  border: 2px black solid;
   background-color: white;
-}
-
-.rodape {
-  border: 2px solid black;
-  background-color: white;
-  height: 60px;
 }
 
 .item1 {
   grid-area: item1;
+  min-width: 250px;
 }
 .item2 {
   grid-area: item2;
+  min-width: 250px;
+
 }
 .item3 {
   grid-area: item3;
+  min-width: 250px;
+
 }
 .item4 {
   grid-area: item4;
+  min-width: 250px;
+
 }
 .item5 {
   grid-area: item5;
+  min-width: 250px;
+
 }
 .item6 {
   grid-area: item6;
+  min-width: 250px;
+
+}
+
+.rodapé {
+  border: 2px black solid;
+  height: 80px;
+  background-color: white;
+}
+
+@media (max-width: 530px) {
+  .principal {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "item1"
+    "item2"
+    "item3"
+    "item4"
+    "item5" 
+    "item6";
+  }
+}
+
+@media (max-width: 800px) and (min-width: 531px){
+  .principal {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "item1 item2"
+    "item3 item3" 
+    "item4 item4"
+    "item5 item5"
+    "item6 item6";
+  }
+}
+@media (max-width: 2560px) and (min-width: 1440px) {
+  *{
+    font-size: 50px;
+  }
 }
